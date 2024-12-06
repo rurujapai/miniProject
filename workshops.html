@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshops - BU Open House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Custom Styles for the Workshop Section */
+        .workshop-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .workshop-card:hover {
+            transform: scale(1.05);
+        }
+        .workshop-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .workshop-card-body {
+            padding: 15px;
+        }
+        .workshop-card-title {
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+        .workshop-card-text {
+            font-size: 1rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BU Open House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="workshops.html">Workshops</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="container my-5">
+        <h1 class="text-center">Workshops & Activities</h1>
+        <p class="text-center mb-4">Participate in hands-on workshops and exciting activities.</p>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="workshop-card">
+                    <img src="assets/images/ai-workshop.jpg" alt="AI Basics">
+                    <div class="workshop-card-body">
+                        <h4 class="workshop-card-title">Workshop 1: AI Basics</h4>
+                        <p class="workshop-card-text">Learn the fundamentals of artificial intelligence with our expert trainers. Dive into AI concepts and explore real-world applications.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6">
+                <div class="workshop-card">
+                    <img src="assets/images/ai-workshop.jpg" alt="Coding Challenge">
+                    <div class="workshop-card-body">
+                        <h4 class="workshop-card-title">Activity: Coding Challenge</h4>
+                        <p class="workshop-card-text">Compete with peers in a fun and interactive coding challenge! Showcase your skills and win exciting prizes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Bangkok University. All rights reserved.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

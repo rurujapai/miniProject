@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BU Open House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Hero Section */
+        .hero {
+            background: url('assets/images/hero-background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            position: relative;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4); /* Add dark overlay for better text visibility */
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            z-index: 1;
+        }
+        .hero p {
+            font-size: 1.25rem;
+            z-index: 1;
+        }
+        .hero .btn {
+            font-size: 1.2rem;
+            padding: 15px 30px;
+            border-radius: 30px;
+            z-index: 2;
+            transition: background-color 0.3s ease;
+        }
+        .hero .btn:hover {
+            background-color: #0056b3; /* Darker shade for hover effect */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">BU Open House</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="schedule.html">Schedule</a></li>
+                    <li class="nav-item"><a class="nav-link" href="speakers.html">Speakers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="workshops.html">Workshops</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registration.html">Register</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sponsors.html">Sponsors</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div>
+            <h1>Welcome to BU Open House</h1>
+            <p>Join us for an exciting day at Bangkok University</p>
+            <!-- Register Now button, linking to registration page -->
+            <a href="registration.html" class="btn btn-primary btn-lg">Register Now</a>
+        </div>
+    </header>
+
+    <!-- Event Highlights Section -->
+    <section class="container my-5">
+        <div class="text-center">
+            <h2 class="section-title">Event Highlights</h2>
+            <p>Discover the best of BU Open House with workshops, speakers, and activities.</p>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/workshop.jpg" class="card-img-top" alt="Workshop">
+                    <div class="card-body">
+                        <h5 class="card-title">Interactive Workshops</h5>
+                        <p class="card-text">Join hands-on sessions led by experts.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/speakers.jpg" class="card-img-top" alt="Speakers">
+                    <div class="card-body">
+                        <h5 class="card-title">Inspiring Speakers</h5>
+                        <p class="card-text">Hear from industry leaders and innovators.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/campus.jpg" class="card-img-top" alt="Campus Tour">
+                    <div class="card-body">
+                        <h5 class="card-title">Campus Tours</h5>
+                        <p class="card-text">Explore our modern facilities and student life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 text-center">
+        <p>&copy; 2024 Bangkok University. All rights reserved.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
